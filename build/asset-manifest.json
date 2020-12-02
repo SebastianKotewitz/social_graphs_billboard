@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/social_graphs_billboard/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/social_graphs_billboard/static/js/main.ba212f2b.chunk.js",
+    "main.js.map": "/social_graphs_billboard/static/js/main.ba212f2b.chunk.js.map",
+    "runtime-main.js": "/social_graphs_billboard/static/js/runtime-main.db21ca66.js",
+    "runtime-main.js.map": "/social_graphs_billboard/static/js/runtime-main.db21ca66.js.map",
+    "static/js/2.394d5f8e.chunk.js": "/social_graphs_billboard/static/js/2.394d5f8e.chunk.js",
+    "static/js/2.394d5f8e.chunk.js.map": "/social_graphs_billboard/static/js/2.394d5f8e.chunk.js.map",
+    "static/js/3.e9494b29.chunk.js": "/social_graphs_billboard/static/js/3.e9494b29.chunk.js",
+    "static/js/3.e9494b29.chunk.js.map": "/social_graphs_billboard/static/js/3.e9494b29.chunk.js.map",
+    "index.html": "/social_graphs_billboard/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/social_graphs_billboard/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.394d5f8e.chunk.js.LICENSE.txt": "/social_graphs_billboard/static/js/2.394d5f8e.chunk.js.LICENSE.txt",
+    "static/media/wreath.9d27b775.png": "/social_graphs_billboard/static/media/wreath.9d27b775.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.db21ca66.js",
+    "static/js/2.394d5f8e.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.ba212f2b.chunk.js"
+  ]
+}
