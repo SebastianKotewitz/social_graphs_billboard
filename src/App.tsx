@@ -1,7 +1,8 @@
 import './App.css';
 import React from 'react';
-import HomePage from './homePage/homePage';
+import HomePage from './homePage/HomePage';
 import TopBar from './topBar/TopBar';
+import BottomBar from './bottomBar/BottomBar';
 
 interface Props {
 
@@ -31,6 +32,7 @@ class App extends React.Component<Props, State>{
         <header className="App-header">
           {this.state.selectedWindow === 0 ? <HomePage /> : <div />}
         </header>
+        <BottomBar />
       </div >
     );
   }

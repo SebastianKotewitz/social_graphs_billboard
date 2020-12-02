@@ -1,7 +1,7 @@
 import { Button, Grid, Typography } from '@material-ui/core';
 import React from 'react';
 import wreath from '../resources/wreath.png'; // Tell webpack this JS file uses this image
-import Sparkle from 'react-sparkle'
+// import Sparkle from 'react-sparkle';
 
 interface Props {
     label?: String;
@@ -28,7 +28,7 @@ class TopBarButton extends React.Component<Props, State>{
                         }
                         <Grid item>
                             <div style={{ alignContent: "center" }} >
-                                {this.props.christmasMode && <Sparkle />}
+                                {/* {this.props.christmasMode && <Sparkle />} */}
                                 <Typography variant={this.props.typographyVariant ?? "body1"}>
                                     {this.props.label ?? ""}
                                 </Typography>
