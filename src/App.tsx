@@ -6,7 +6,6 @@ import BottomBar from './bottomBar/BottomBar';
 import SentimentalPage from './sentimental/SentimentalPage';
 
 interface Props {
-  initialWindow: number;
 }
 
 interface State {
@@ -18,18 +17,10 @@ class App extends React.Component<Props, State>{
   constructor(props: Props) {
     super(props);
     this.setWindow = this.setWindow.bind(this);
-    var keepPath = window.location.pathname.split('/')[1];
-    var path = window.location.pathname.split('/')[2];
-    console.log(path);
-    if (!path) {
-      path = "0";
-      window.history.pushState("", "", keepPath + "/" + path);
-    }
-    this.state = { selectedWindow: Number(path) };
+    this.state = { selectedWindow: 0 };
   }
 
   setWindow(n: number): void {
-    window.history.pushState("", "", n.toString());
     this.setState({ selectedWindow: n });
   }
 
