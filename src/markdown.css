@@ -1,21 +1,21 @@
 .MDbody {
     font-size: 18px;
     text-align: left;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .MDtitle {
     font-size: 32px;
     font-weight: bolder;
     text-align: center;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .centerBodyTextDiv{
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .halfPageImage{

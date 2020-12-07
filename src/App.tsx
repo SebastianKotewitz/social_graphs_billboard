@@ -4,7 +4,9 @@ import HomePage from './homePage/HomePage';
 import TopBar from './topBar/TopBar';
 import BottomBar from './bottomBar/BottomBar';
 import SentimentalPage from './sentimental/SentimentalPage';
-import CollaborationsPage from './collaborations/collaborationsPage';
+import CollaborationsPage from './collaborations/CollaborationsPage';
+import WordCloudPage from './wordCloud/WordCloudPage';
+import ProfanityPage from './profanity/ProfanityPage';
 
 interface Props {
 }
@@ -32,7 +34,9 @@ class App extends React.Component<Props, State>{
         <header className="App-header">
           {this.state.selectedWindow === 0 ? <HomePage /> : <div />}
           {this.state.selectedWindow === 1 ? <CollaborationsPage /> : <div />}
+          {this.state.selectedWindow === 2 ? <WordCloudPage /> : <div />}
           {this.state.selectedWindow === 4 ? <SentimentalPage /> : <div />}
+          {this.state.selectedWindow === 5 ? <ProfanityPage /> : <div />}
         </header>
         <BottomBar />
       </div >

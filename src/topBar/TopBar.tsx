@@ -22,42 +22,42 @@ class TopBar extends React.Component<Props, State>{
                             typographyVariant="h5"
                             setWindow={this.props.setWindow}
                             window={0}
-                            selected={0 == this.props.selectedWindow}
+                            selected={0 === this.props.selectedWindow}
                         />
                         <TopBarButton
                             label="Collaborations"
                             setWindow={this.props.setWindow}
                             window={1}
-                            selected={1 == this.props.selectedWindow}
+                            selected={1 === this.props.selectedWindow}
                         />
                         <TopBarButton
-                            label="Word Clouds"
+                            label="Popular Words"
                             setWindow={this.props.setWindow}
                             window={2}
-                            selected={2 == this.props.selectedWindow}
+                            selected={2 === this.props.selectedWindow}
                         />
                         <TopBarButton
                             label="Communities"
                             setWindow={this.props.setWindow}
                             window={3}
-                            selected={3 == this.props.selectedWindow}
+                            selected={3 === this.props.selectedWindow}
                         />
                         <TopBarButton
                             label="Sentimental Analysis"
                             setWindow={this.props.setWindow}
                             window={4}
-                            selected={4 == this.props.selectedWindow}
+                            selected={4 === this.props.selectedWindow}
                         />
                         <TopBarButton
                             label="Profanity"
                             setWindow={this.props.setWindow}
                             window={5}
-                            selected={5 == this.props.selectedWindow}
+                            selected={5 === this.props.selectedWindow}
                         />
                         <TopBarButton label="Christmas"
                             setWindow={this.props.setWindow}
                             window={6}
-                            selected={6 == this.props.selectedWindow}
+                            selected={6 === this.props.selectedWindow}
                             christmasMode={true}
                         />
                     </Grid>

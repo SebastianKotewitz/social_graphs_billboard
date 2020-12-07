@@ -3,6 +3,11 @@ import ImageFigure from '../ImageFigure';
 import React from 'react';
 import CollabIntro from '../resources/text/collabIntro';
 import Text1 from '../resources/text/collabText1';
+import TopArtists from '../resources/text/topArtists';
+import TopArtistsL1 from '../resources/text/topArtistsList1';
+import TopArtistsL2 from '../resources/text/topArtistsList2';
+import TopArtistsL3 from '../resources/text/topArtistsList3';
+import TopArtistsEnd from '../resources/text/topArtistsEnd';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
 import '../markdown.css';
@@ -22,12 +27,45 @@ class CollaborationsPage extends React.Component<Props, State>{
                 <Grid item>
                     <div className="centerBodyTextDiv">
                         <ReactMarkdown plugins={[gfm]} className="MDbody">
-                            {CollabIntro}
+                            {TopArtists}
+                        </ReactMarkdown>
+                    </div>
+                </Grid>
+                <Grid item>
+                    <Grid container direction="row" justify="space-around">
+                        <Grid item>
+                            <ReactMarkdown plugins={[gfm]} className="MDbody">
+                                {TopArtistsL1}
+                            </ReactMarkdown>
+                        </Grid>
+                        <Grid item>
+                            <ReactMarkdown plugins={[gfm]} className="MDbody">
+                                {TopArtistsL2}
+                            </ReactMarkdown>
+                        </Grid>
+                        <Grid item>
+                            <ReactMarkdown plugins={[gfm]} className="MDbody">
+                                {TopArtistsL3}
+                            </ReactMarkdown>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <Grid item>
+                    <div className="centerBodyTextDiv">
+                        <ReactMarkdown plugins={[gfm]} className="MDbody">
+                            {TopArtistsEnd}
                         </ReactMarkdown>
                     </div>
                 </Grid>
                 <Grid item>
                     <Divider />
+                </Grid>
+                <Grid item>
+                    <div className="centerBodyTextDiv">
+                        <ReactMarkdown plugins={[gfm]} className="MDbody">
+                            {CollabIntro}
+                        </ReactMarkdown>
+                    </div>
                 </Grid>
                 <Grid item>
                     <ImageFigure
@@ -40,7 +78,7 @@ class CollaborationsPage extends React.Component<Props, State>{
                             <div style={{ height: "100%", display: "flex", justifyContent: "center", alignContent: "center" }}>
                                 <img
                                     src={process.env.PUBLIC_URL + '/collabsPerSongPerYear.png'}
-                                    alt="network"
+                                    alt="collabsPerSongPerYear"
                                     className="halfPageImage" />
                             </div>
                         }

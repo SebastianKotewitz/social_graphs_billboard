@@ -1,9 +1,9 @@
 import { Divider, Grid } from '@material-ui/core';
 import ImageFigure from '../ImageFigure';
 import React from 'react';
-import SentimentalIntroductionText from '../resources/text/sentIntroduction';
-import Text1 from '../resources/text/sentText1';
-import Text2 from '../resources/text/sentText2';
+import ProfanityIntro from '../resources/text/profanityIntro';
+import Text1 from '../resources/text/profanityText1';
+import Text2 from '../resources/text/profanityText2';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
 import '../markdown.css';
@@ -16,14 +16,14 @@ interface State {
 
 }
 
-class SentimentalPage extends React.Component<Props, State>{
+class ProfanityPage extends React.Component<Props, State>{
     render() {
         return (
             <Grid container direction="column" alignItems="stretch">
                 <Grid item>
                     <div className="centerBodyTextDiv">
                         <ReactMarkdown plugins={[gfm]} className="MDbody">
-                            {SentimentalIntroductionText}
+                            {ProfanityIntro}
                         </ReactMarkdown>
                     </div>
                 </Grid>
@@ -40,29 +40,28 @@ class SentimentalPage extends React.Component<Props, State>{
                         right={
                             <div style={{ height: "100%", display: "flex", justifyContent: "center", alignContent: "center" }}>
                                 <img
-                                    src={process.env.PUBLIC_URL + '/sentimentPerYear.png'}
-                                    alt="sentimentPerYear"
+                                    src={process.env.PUBLIC_URL + '/profanity1.png'}
+                                    alt="profanity1"
                                     className="halfPageImage" />
                             </div>
                         }
                     />
                 </Grid>
                 <Grid item>
-                    <ImageFigure
-                        left={
-                            <div style={{ height: "100%", display: "flex", justifyContent: "center", alignContent: "center" }}>
-                                <img
-                                    src={process.env.PUBLIC_URL + '/sentimentPerQ.png'}
-                                    alt="sentimentPerQ"
-                                    className="halfPageImage" />
-                            </div>
-                        }
-                        right={
-                            <ReactMarkdown plugins={[gfm]} className="MDbody">
-                                {Text2}
-                            </ReactMarkdown>
-                        }
-                    />
+                    <div className="centerBodyTextDiv">
+                        <ReactMarkdown plugins={[gfm]} className="MDbody">
+                            {Text2}
+                        </ReactMarkdown>
+                    </div>
+                </Grid>
+                <Grid item>
+                    <div className="centerBodyTextDiv">
+                        <img
+                            src={process.env.PUBLIC_URL + '/profanity2.png'}
+                            alt="profanity2"
+                            className="halfPageImage"
+                        />
+                    </div>
                 </Grid>
                 <div style={{ minHeight: "128px" }} />
             </Grid>
@@ -70,4 +69,4 @@ class SentimentalPage extends React.Component<Props, State>{
     }
 }
 
-export default SentimentalPage;
+export default ProfanityPage;
