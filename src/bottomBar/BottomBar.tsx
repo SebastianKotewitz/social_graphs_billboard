@@ -11,7 +11,7 @@ class BottomBar extends React.Component<Props, State>{
 
     render() {
         return (
-            <div style={{ position: "fixed", bottom: 0, width: "100%" }}>
+            <div style={{ position: "fixed", bottom: 0, width: "100%", backgroundColor: "grey"}}>
                 <Grid container direction="row" justify="flex-end">
                     <Grid item>
                         <Button target="_blank" href="https://github.com/SebastianKotewitz/social_graphs_billboard/raw/main/downloadFiles/fullNetworkSentiment.gpickle" variant="contained" style={{marginRight: "24px"}}>

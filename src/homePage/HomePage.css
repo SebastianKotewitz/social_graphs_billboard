@@ -1,0 +1,6 @@
+.markdown:visited {
+    color: green;
+}
+.markdown a:visited{
+    color: yellow;
+}
