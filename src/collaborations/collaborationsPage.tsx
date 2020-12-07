@@ -1,9 +1,8 @@
 import { Divider, Grid } from '@material-ui/core';
 import ImageFigure from '../ImageFigure';
 import React from 'react';
-import SentimentalIntroductionText from '../resources/text/sentIntroduction';
-import Text1 from '../resources/text/sentText1';
-import Text2 from '../resources/text/sentText2';
+import CollabIntro from '../resources/text/collabIntro';
+import Text1 from '../resources/text/collabText1';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
 import '../markdown.css';
@@ -16,14 +15,14 @@ interface State {
 
 }
 
-class SentimentalPage extends React.Component<Props, State>{
+class CollaborationsPage extends React.Component<Props, State>{
     render() {
         return (
             <Grid container direction="column" alignItems="stretch">
                 <Grid item>
                     <div className="centerBodyTextDiv">
                         <ReactMarkdown plugins={[gfm]} className="MDbody">
-                            {SentimentalIntroductionText}
+                            {CollabIntro}
                         </ReactMarkdown>
                     </div>
                 </Grid>
@@ -40,27 +39,10 @@ class SentimentalPage extends React.Component<Props, State>{
                         right={
                             <div style={{ height: "100%", display: "flex", justifyContent: "center", alignContent: "center" }}>
                                 <img
-                                    src={process.env.PUBLIC_URL + '/sentimentPerYear.png'}
+                                    src={process.env.PUBLIC_URL + '/collabsPerSongPerYear.png'}
                                     alt="network"
                                     className="halfPageImage" />
                             </div>
-                        }
-                    />
-                </Grid>
-                <Grid item>
-                    <ImageFigure
-                        left={
-                            <div style={{ height: "100%", display: "flex", justifyContent: "center", alignContent: "center" }}>
-                                <img
-                                    src={process.env.PUBLIC_URL + '/sentimentPerQ.png'}
-                                    alt="network"
-                                    className="halfPageImage" />
-                            </div>
-                        }
-                        right={
-                            <ReactMarkdown plugins={[gfm]} className="MDbody">
-                                {Text2}
-                            </ReactMarkdown>
                         }
                     />
                 </Grid>
@@ -70,4 +52,4 @@ class SentimentalPage extends React.Component<Props, State>{
     }
 }
 
-export default SentimentalPage;
+export default CollaborationsPage;

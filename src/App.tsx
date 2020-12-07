@@ -4,6 +4,7 @@ import HomePage from './homePage/HomePage';
 import TopBar from './topBar/TopBar';
 import BottomBar from './bottomBar/BottomBar';
 import SentimentalPage from './sentimental/SentimentalPage';
+import CollaborationsPage from './collaborations/collaborationsPage';
 
 interface Props {
 }
@@ -30,6 +31,7 @@ class App extends React.Component<Props, State>{
         <TopBar setWindow={this.setWindow} selectedWindow={this.state.selectedWindow} />
         <header className="App-header">
           {this.state.selectedWindow === 0 ? <HomePage /> : <div />}
+          {this.state.selectedWindow === 1 ? <CollaborationsPage /> : <div />}
           {this.state.selectedWindow === 4 ? <SentimentalPage /> : <div />}
         </header>
         <BottomBar />

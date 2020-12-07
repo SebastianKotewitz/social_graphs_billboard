@@ -3,6 +3,7 @@ import ImageFigure from '../ImageFigure';
 import React from 'react';
 import NetworkConstructionText from '../resources/text/networkConstruction';
 import IntroductionText from '../resources/text/introduction';
+import DataSetText from '../resources/text/dataset';
 import GoalText from '../resources/text/goal';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
@@ -29,6 +30,13 @@ class HomePage extends React.Component<Props, State>{
                     <div className="centerBodyTextDiv">
                         <ReactMarkdown plugins={[gfm]} className="MDbody">
                             {IntroductionText}
+                        </ReactMarkdown>
+                    </div>
+                </Grid>
+                <Grid item>
+                    <div className="centerBodyTextDiv">
+                        <ReactMarkdown plugins={[gfm]} className="MDbody">
+                            {DataSetText}
                         </ReactMarkdown>
                     </div>
                 </Grid>

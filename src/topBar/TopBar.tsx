@@ -48,10 +48,16 @@ class TopBar extends React.Component<Props, State>{
                             window={4}
                             selected={4 == this.props.selectedWindow}
                         />
-                        <TopBarButton label="Christmas"
+                        <TopBarButton
+                            label="Profanity"
                             setWindow={this.props.setWindow}
                             window={5}
                             selected={5 == this.props.selectedWindow}
+                        />
+                        <TopBarButton label="Christmas"
+                            setWindow={this.props.setWindow}
+                            window={6}
+                            selected={6 == this.props.selectedWindow}
                             christmasMode={true}
                         />
                     </Grid>
