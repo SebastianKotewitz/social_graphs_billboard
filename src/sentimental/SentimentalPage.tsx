@@ -1,9 +1,9 @@
-import { Divider, Grid } from '@material-ui/core';
+import { Divider, Grid, Typography } from '@material-ui/core';
 import ImageFigure from '../ImageFigure';
 import React from 'react';
-import NetworkConstructionText from '../resources/text/networkConstruction';
-import IntroductionText from '../resources/text/introduction';
-import GoalText from '../resources/text/goal';
+import SentimentalIntroductionText from '../resources/text/sentIntroduction';
+import Text1 from '../resources/text/sentText1';
+import Text2 from '../resources/text/sentText2';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
 import '../markdown.css';
@@ -16,26 +16,14 @@ interface State {
 
 }
 
-class HomePage extends React.Component<Props, State>{
+class SentimentalPage extends React.Component<Props, State>{
     render() {
         return (
             <Grid container direction="column" alignItems="stretch">
                 <Grid item>
-                    <ReactMarkdown plugins={[gfm]} className="MDtitle">
-                        Billboard Top 100 analysis
-                    </ReactMarkdown>
-                </Grid>
-                <Grid item>
                     <div className="centerBodyTextDiv">
                         <ReactMarkdown plugins={[gfm]} className="MDbody">
-                            {IntroductionText}
-                        </ReactMarkdown>
-                    </div>
-                </Grid>
-                <Grid item>
-                    <div className="centerBodyTextDiv">
-                        <ReactMarkdown plugins={[gfm]} className="MDbody">
-                            {GoalText}
+                            {SentimentalIntroductionText}
                         </ReactMarkdown>
                     </div>
                 </Grid>
@@ -45,16 +33,33 @@ class HomePage extends React.Component<Props, State>{
                 <Grid item>
                     <ImageFigure
                         left={
+                            <ReactMarkdown plugins={[gfm]} className="MDbody">
+                                {Text1}
+                            </ReactMarkdown>
+                        }
+                        right={
                             <div style={{ height: "100%", display: "flex", justifyContent: "center", alignContent: "center" }}>
                                 <img
-                                    src={process.env.PUBLIC_URL + '/network.png'}
+                                    src={process.env.PUBLIC_URL + '/sentimentPerYear.png'}
+                                    alt="network"
+                                    className="halfPageImage" />
+                            </div>
+                        }
+                    />
+                </Grid>
+                <Grid item>
+                    <ImageFigure
+                        left={
+                            <div style={{ height: "100%", display: "flex", justifyContent: "center", alignContent: "center" }}>
+                                <img
+                                    src={process.env.PUBLIC_URL + '/sentimentPerQ.png'}
                                     alt="network"
                                     className="halfPageImage" />
                             </div>
                         }
                         right={
                             <ReactMarkdown plugins={[gfm]} className="MDbody">
-                                {NetworkConstructionText}
+                                {Text2}
                             </ReactMarkdown>
                         }
                     />
@@ -65,4 +70,4 @@ class HomePage extends React.Component<Props, State>{
     }
 }
 
-export default HomePage;
+export default SentimentalPage;

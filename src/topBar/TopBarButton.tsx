@@ -9,6 +9,7 @@ interface Props {
     setWindow: (window: number) => void;
     window: number;
     christmasMode?: boolean;
+    selected?: boolean;
 }
 
 interface State {
@@ -29,7 +30,7 @@ class TopBarButton extends React.Component<Props, State>{
                         <Grid item>
                             <div style={{ alignContent: "center" }} >
                                 {/* {this.props.christmasMode && <Sparkle />} */}
-                                <Typography variant={this.props.typographyVariant ?? "body1"}>
+                                <Typography variant={this.props.typographyVariant ?? "body1"} color={this.props.selected ?? "false" ? "secondary" : "inherit"}>
                                     {this.props.label ?? ""}
                                 </Typography>
                             </div>

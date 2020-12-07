@@ -1,0 +1,24 @@
+.MDbody {
+    font-size: 18px;
+    text-align: left;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.MDtitle {
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.centerBodyTextDiv{
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.halfPageImage{
+    width: 95%;
+    place-self: center;
+}
