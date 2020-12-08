@@ -27,6 +27,9 @@ class App extends React.Component<Props, State>{
 
   setWindow(n: number): void {
     this.setState({ selectedWindow: n });
+    if (!(this.state.selectedWindow === n)) {
+      window.scrollTo(0, 0);
+    }
   }
 
   render() {
