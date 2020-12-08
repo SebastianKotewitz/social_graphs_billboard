@@ -3,6 +3,7 @@ import ImageFigure from '../ImageFigure';
 import React from 'react';
 import Intro from '../resources/text/wordCloud';
 import PopIntro from '../resources/text/popSongsIntro';
+import PopIntroPre from '../resources/text/popIntro';
 import PopText1 from '../resources/text/popSongsText1';
 import PopText2 from '../resources/text/popSongsText2';
 import PopFig1 from '../resources/text/popSongsFig1';
@@ -23,6 +24,13 @@ class WordCloudPage extends React.Component<Props, State>{
     render() {
         return (
             <Grid container direction="column" alignItems="stretch">
+                <Grid item>
+                    <div className="centerBodyTextDiv">
+                        <ReactMarkdown plugins={[gfm]} className="MDbody">
+                            {PopIntroPre}
+                        </ReactMarkdown>
+                    </div>
+                </Grid>
                 <Grid item>
                     <div className="centerBodyTextDiv">
                         <ReactMarkdown plugins={[gfm]} className="MDbody">

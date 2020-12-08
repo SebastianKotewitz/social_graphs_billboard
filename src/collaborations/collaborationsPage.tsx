@@ -10,7 +10,7 @@ import TopArtists from '../resources/text/topArtists';
 import TopArtistsL1 from '../resources/text/topArtistsList1';
 import TopArtistsL2 from '../resources/text/topArtistsList2';
 import TopArtistsL3 from '../resources/text/topArtistsList3';
-import TopArtistsEnd from '../resources/text/topArtistsEnd';
+import TopArtistsEnd from '../resources/text/topSongs';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
 import '../markdown.css';
@@ -82,8 +82,8 @@ class CollaborationsPage extends React.Component<Props, State>{
                         left={
                             <div style={{ height: "100%", display: "flex", justifyContent: "center", alignContent: "center" }}>
                                 <img
-                                    src={process.env.PUBLIC_URL + '/in.png'}
-                                    alt="in"
+                                    src={process.env.PUBLIC_URL + '/out.png'}
+                                    alt="out"
                                     className="halfPageImage" />
                             </div>
                         }

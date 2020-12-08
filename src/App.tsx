@@ -8,6 +8,7 @@ import CollaborationsPage from './collaborations/CollaborationsPage';
 import WordCloudPage from './wordCloud/WordCloudPage';
 import ProfanityPage from './profanity/ProfanityPage';
 import ChristmasPage from './christmas/ChristmasPage';
+import CommunitiesPage from './communities/CommunitiesPage';
 
 interface Props {
 }
@@ -36,6 +37,7 @@ class App extends React.Component<Props, State>{
           {this.state.selectedWindow === 0 ? <HomePage /> : <div />}
           {this.state.selectedWindow === 1 ? <CollaborationsPage /> : <div />}
           {this.state.selectedWindow === 2 ? <WordCloudPage /> : <div />}
+          {this.state.selectedWindow === 3 ? <CommunitiesPage /> : <div />}
           {this.state.selectedWindow === 4 ? <SentimentalPage /> : <div />}
           {this.state.selectedWindow === 5 ? <ProfanityPage /> : <div />}
           {this.state.selectedWindow === 6 ? <ChristmasPage /> : <div />}
