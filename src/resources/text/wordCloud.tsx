@@ -1,4 +1,6 @@
 const text: string = `
+## Popular Words
+
 Some terms are naturally a lot more common in songs than others. As the billboard chart only contains the most popular songs, it is assumed that the most common terms relates to the most basic subject of all: romance.
 
 If this is true, and/or if other subjects top the list, is investigated by firstly aggregating lyrics from every song defined in the collected network of artists to one long list of words.

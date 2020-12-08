@@ -31,7 +31,7 @@ class TopBar extends React.Component<Props, State>{
                             selected={1 === this.props.selectedWindow}
                         />
                         <TopBarButton
-                            label="Popular Words"
+                            label="Most Popular"
                             setWindow={this.props.setWindow}
                             window={2}
                             selected={2 === this.props.selectedWindow}
