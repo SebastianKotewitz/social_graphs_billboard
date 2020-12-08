@@ -95,10 +95,20 @@ class CommunitiesPage extends React.Component<Props, State>{
                     <ImageFigure
                         left={
                             <div style={{ height: "100%", display: "flex", justifyContent: "center", alignContent: "center" }}>
-                                <img
-                                    src={process.env.PUBLIC_URL + '/cSize.png'}
-                                    alt="cSize"
-                                    className="halfPageImage" />
+                                <Grid container direction="column" justify="center">
+                                    <Grid item>
+                                        <img
+                                            src={process.env.PUBLIC_URL + '/cBar.png'}
+                                            alt="cBar"
+                                            className="halfPageImage" />
+                                    </Grid>
+                                    <Grid item>
+                                        <img
+                                            src={process.env.PUBLIC_URL + '/cSize.png'}
+                                            alt="cSize"
+                                            className="halfPageImage" />
+                                    </Grid>
+                                </Grid>
                             </div>
                         }
                         right={
@@ -112,13 +122,6 @@ class CommunitiesPage extends React.Component<Props, State>{
                     <div className="centerBodyTextDiv">
                         <ReactMarkdown plugins={[gfm]} className="MDbody">
                             {Text4}
-                        </ReactMarkdown>
-                    </div>
-                </Grid>
-                <Grid item>
-                    <div className="centerBodyTextDiv">
-                        <ReactMarkdown plugins={[gfm]} className="MDbody">
-                            {Text5}
                         </ReactMarkdown>
                     </div>
                 </Grid>
@@ -151,6 +154,14 @@ class CommunitiesPage extends React.Component<Props, State>{
                             </div>
                         )}
                     </Grid>
+                </Grid>
+
+                <Grid item>
+                    <div className="centerBodyTextDiv">
+                        <ReactMarkdown plugins={[gfm]} className="MDbody">
+                            {Text5}
+                        </ReactMarkdown>
+                    </div>
                 </Grid>
 
                 <Grid item>

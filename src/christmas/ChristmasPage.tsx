@@ -29,6 +29,13 @@ class HomePage extends React.Component<Props, State>{
                         </ReactMarkdown>
                     </div>
                 </Grid>
+                <Grid item>
+                    <div className="centerBodyTextDiv">
+                        <ReactMarkdown plugins={[gfm]} className="MDbody">
+                            ## Naive method
+                        </ReactMarkdown>
+                    </div>
+                </Grid>
                 <ImageFigure
                     left={
                         <ReactMarkdown plugins={[gfm]} className="MDbody">
@@ -41,6 +48,13 @@ class HomePage extends React.Component<Props, State>{
                         </ReactMarkdown>
                     }
                 />
+                <Grid item>
+                    <div className="centerBodyTextDiv">
+                        <ReactMarkdown plugins={[gfm]} className="MDbody">
+                            ## Wordlist method
+                        </ReactMarkdown>
+                    </div>
+                </Grid>
                 <ImageFigure
                     left={
                         <ReactMarkdown plugins={[gfm]} className="MDbody">

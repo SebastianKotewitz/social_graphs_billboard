@@ -8,11 +8,11 @@ By analysing these top connected artists, it is clear that most artists belong t
 * Kanye West
 * Lil Wayne
 * Travis Scott
-* JAY-Z (10)
+* JAY-Z
 * Nicki Minaj
 * Future
 * Young Thug
-* Lil Baby
+* Meek Mill
 
 **DJ's (Hip Hop + songwriters)**:
 * DJ Khaled
@@ -20,10 +20,10 @@ By analysing these top connected artists, it is clear that most artists belong t
 
 **Regular singers (R&B + Pop + hiphop)**:
 * Chris Brown
+* Earth, Wind & Fire
 
 **Artists gatherings**:
 * Artists United Against Apartheid
-* Artist of then now and forever
 
 It is worth noting that multiple rappers like "**Nicki Minaj**" for instance, also reckognises as singers. However, as rap is her primary performing form, she and others have been grouped like so.
 
