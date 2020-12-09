@@ -1,5 +1,6 @@
 const text: string = `
-Top 10 artists with highest number of weeks on billboard hot 100
+Top 10 artists with highest number of weeks on billboard hot 100  
+(counting multiple songs on the same week)
 1. Drake (1316)
 2. Taylor Swift (1021)
 3. Madonna (867)

@@ -18,6 +18,8 @@ import TopCommStuff9 from '../resources/text/topCommStuff9';
 import TopCommStuff10 from '../resources/text/topCommStuff10';
 import WordIntro from '../resources/text/wordIntro';
 import WordAna from '../resources/text/wordAna';
+import ComSent from '../resources/text/comSval';
+import ComSentAna from '../resources/text/comSvalAna';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
 import '../markdown.css';
@@ -209,6 +211,22 @@ class CommunitiesPage extends React.Component<Props, State>{
                         </ReactMarkdown>
                     </div>
                 </Grid>
+
+                <Grid item>
+                    <ImageFigure
+                        left={
+                            <ReactMarkdown plugins={[gfm]} className="MDbody">
+                                {ComSentAna}
+                            </ReactMarkdown>
+                        }
+                        right={
+                            <ReactMarkdown plugins={[gfm]} className="MDbody">
+                                {ComSent}
+                            </ReactMarkdown>
+                        }
+                    />
+                </Grid>
+
                 <div style={{ minHeight: "128px" }} />
             </Grid>
         );

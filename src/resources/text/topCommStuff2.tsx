@@ -3,7 +3,7 @@ Community 2
 
  Top 10 artists by degree 
 
-Fat Joe: 14
+- Fat Joe: 14
 - Ja Rule: 11
 - Mary J. Blige: 7
 - Case: 6

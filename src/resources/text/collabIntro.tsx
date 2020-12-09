@@ -1,4 +1,5 @@
 const text: string = `
+## Collaborations over time
 We wanted to see the trend in collaborations over the years. To do this, we looked at all edges in the dataset. 
 We wanted the data to be normalized, so we also had to count the amount of songs for each year. 
 The year of a song is determined by the first time it appears on the Billboard list.  

@@ -1,7 +1,7 @@
 const text: string = `
 ## Creation of communities
 
-Communities within the network are created by dividing nodes into different groups according to the louvain algorithm. This partitioning results in 28 communities. The distribution of the sizes regarding these communities are plotted to the left both ordered both by number (given randomly) and by size.
+Communities within the network are created by dividing nodes into different groups according to the Louvain Algorithm. This partitioning results in 28 communities. The distribution of the sizes regarding these communities are plotted to the left both ordered both by number (given randomly) and by size.
 
 The top communities ranked by number of artists within are (listed by assigned number):
 1. **8**
