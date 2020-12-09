@@ -24,8 +24,7 @@ Community 16
 - Bruno Mars: 13
 - Gwen Stefani: 12
 - Montgomery Gentry: 10
-- Tyler
-- The Creator: 10
+- Tyler The Creator: 10
 - A$AP Rocky: 9
 `;
 

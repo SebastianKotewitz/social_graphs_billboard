@@ -16,7 +16,7 @@ Community 2
 
  Top 10 artists by songs 
 
-Mary J. Blige: 31
+- Mary J. Blige: 31
 - Sheryl Crow: 16
 - Fabolous: 12
 - Fat Joe: 12
