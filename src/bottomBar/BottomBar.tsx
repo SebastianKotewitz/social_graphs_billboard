@@ -19,8 +19,8 @@ class BottomBar extends React.Component<Props, State>{
                         </Button>
                     </Grid>
                     <Grid item>
-                        <Button target="_blank" href="http://www.google.com/" variant="contained" style={{marginRight: "24px"}}>
-                            Download ipynb
+                        <Button target="_blank" href="https://github.com/SebastianKotewitz/social_graphs_billboard/blob/main/ipynb/Top%20Billboard%20Artists.ipynb" variant="contained" style={{marginRight: "24px"}}>
+                            View ipynb
                         </Button>
                     </Grid>
                 </Grid>
